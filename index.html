@@ -151,8 +151,6 @@
                   </tr>
                 </thead>
                 <tbody id="table-users">
-
-                                   
                   
                 </tbody>
               </table>
@@ -184,7 +182,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3 id="number-users-admin">0</h3>
+                  <h3 id="number-admin">0</h3>
           
                   <p>Administradores</p>
                 </div>
@@ -212,7 +210,7 @@
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked>
+                      <input type="radio" id="exampleInputGenderM" name="gender" value="M">
                       Masculino</label>
                   </div>
                   <div class="radio">
@@ -474,11 +472,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">E-mail</label>
-                  <input type="email" required class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
+                  <input type="email" required class="form-control" id="exampleInputEmail1" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" required class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
+                  <input type="password" required class="form-control" id="exampleInputPassword1" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
@@ -486,7 +484,7 @@
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="admin" id="exampleInputAdmin"> Administrador
+                    <input type="checkbox" name="admin"> Administrador
                   </label>
                 </div>
               </div>
@@ -496,8 +494,7 @@
               </div>
             </form>
           </div>
-
-          <div class="box box-primary" id="box-user-update" style="display:none;">
+          <div class="box box-primary" id="box-user-update" style="display: none;">
             <div class="box-header with-border">
               <h3 class="box-title">Editar Usuário</h3>
             </div>
@@ -513,13 +510,13 @@
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked> Masculino
-                    </label>
+                      <input type="radio" id="exampleInputGenderM" name="gender" value="M">
+                      Masculino</label>
                   </div>
                   <div class="radio">
                     <label for="exampleInputGenderF">
-                      <input type="radio" id="exampleInputGenderF" name="gender" value="F"> Feminino
-                    </label>
+                      <input type="radio" id="exampleInputGenderF" name="gender" value="F">
+                      Feminino</label>
                   </div>
                 </div>
                 <div class="form-group">
@@ -775,24 +772,23 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">E-mail</label>
-                  <input type="email" required class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
+                  <input type="email" required class="form-control" id="exampleInputEmail1" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" required class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
+                  <input type="password" required class="form-control" id="exampleInputPassword1" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
-                  <img src="dist/img/boxed-bg.jpg" class="photo" style="max-height: 128px;">
                   <label for="exampleInputFile">Foto</label>
                   <input type="file" id="exampleInputFile" name="photo">
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="admin" id="exampleInputAdmin"> Administrador
+                    <input type="checkbox" name="admin"> Administrador
                   </label>
                 </div>
               </div>
-              <!-- /.box-body -->
+              <!-- /.box-body -->          
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Salvar</button>
                 <button type="button" class="btn btn-default btn-cancel">Cancelar</button>
@@ -819,10 +815,8 @@
   </footer>
 
 </div>
-
-<script src="classes/Utils.js"></script>
-<script src="models/User.js"></script>
-<script src="controllers/UserController.js"></script>
+<script src="models/users.js"></script>
+<script src="controllers/UserControllers.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
